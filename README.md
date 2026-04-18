@@ -10,9 +10,12 @@ The site is designed for GitHub Pages and uses plain HTML, CSS, and minimal vani
 /index.html
 /styles/site.css
 /scripts/site.js
+/scripts/sync_itch_devlogs.py
+/.github/workflows/sync-itch-devlogs.yml
 /assets/branding/
 /assets/projects/
 /content/site-data.json
+/content/itch-devlog.json
 /content/site-data.schema.json
 /content/AI_ARTIFACT_LOG.md
 /README.md
@@ -26,11 +29,42 @@ The page shell lives in [index.html](/D:/Website/index.html), the visual system 
 The renderer in [site.js](/D:/Website/scripts/site.js) loads `content/site-data.json` and fills the following areas:
 
 - Hero copy and quick strengths
+- Latest news ticker sourced from itch devlogs
 - About copy
 - Featured project cards
 - Additional work cards
 - Research themes and public-output empty state
 - Public links
+
+## Automatic itch devlog sync
+
+The site now includes a generated news feed in [itch-devlog.json](/D:/Website/content/itch-devlog.json).
+
+It is produced by [sync_itch_devlogs.py](/D:/Website/scripts/sync_itch_devlogs.py), which:
+
+- Fetches the public itch profile at `https://jazhikho.itch.io/`
+- Discovers project URLs automatically from the profile page
+- Tries each project's `devlog.rss`
+- Collects recent entries and writes a local JSON file for the site to render
+
+This avoids client-side cross-origin dependence on itch itself and keeps the published site static.
+
+### GitHub Actions automation
+
+The workflow in [sync-itch-devlogs.yml](/D:/Website/.github/workflows/sync-itch-devlogs.yml):
+
+- Runs every 6 hours
+- Can also be run manually from the Actions tab
+- Regenerates `content/itch-devlog.json`
+- Commits and pushes the updated file if anything changed
+
+### Run the sync locally
+
+```powershell
+python scripts/sync_itch_devlogs.py
+```
+
+This updates `content/itch-devlog.json` locally.
 
 ## How to edit project data
 
@@ -101,6 +135,7 @@ Then visit `http://localhost:8000/`.
 - Public project text should stay grounded in public-safe source material only.
 - The current research section is intentionally conservative and shows an empty-state message until there are public-safe talks or publications to add.
 - `og:image` is already set, but if you later know the final production URL you may also want to add `og:url` and a canonical tag in [index.html](/D:/Website/index.html).
+- The itch news section is generated. If it looks stale, run the sync workflow or the local Python sync script.
 
 ## Content checklist
 
@@ -111,3 +146,4 @@ Update these later if public-safe information becomes available:
 - Add education only if the exact school and date are confirmed as public-safe for this portfolio.
 - Swap in preferred project thumbnails if you want something other than the current public capture images.
 - Review project descriptions whenever public release pages change.
+- Review the auto-discovered itch projects occasionally in case profile layout changes require updates to the sync script.

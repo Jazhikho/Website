@@ -15,3 +15,17 @@
 | Final approval | Pending |
 
 Use this document to record future revisions to significant AI-assisted artifacts in the repository.
+
+## Itch Devlog Sync
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-04-18 |
+| Model / tool used | Codex (GPT-5-based coding agent) |
+| Task purpose | Add automatic itch.io devlog discovery and a generated latest-news feed for the site |
+| Input materials used | Existing site files, public itch profile HTML, public project devlog RSS feeds |
+| What AI produced | `scripts/sync_itch_devlogs.py`, `.github/workflows/sync-itch-devlogs.yml`, `content/itch-devlog.json`, and site changes to render the generated feed |
+| What the user accepted | Pending user review |
+| What the user rejected | None recorded yet |
+| What the user changed | Not recorded yet |
+| Final approval | Pending |

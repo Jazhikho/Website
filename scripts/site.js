@@ -1,4 +1,5 @@
 const dataUrl = "./content/site-data.json";
+const newsUrl = "./content/itch-devlog.json";
 
 const elements = {
   title: document.querySelector("title"),
@@ -16,6 +17,9 @@ const elements = {
   researchIntro: document.getElementById("research-intro"),
   researchThemeList: document.getElementById("research-theme-list"),
   researchEntryList: document.getElementById("research-entry-list"),
+  newsMeta: document.getElementById("news-meta"),
+  newsTickerTrack: document.getElementById("news-ticker-track"),
+  newsEmpty: document.getElementById("news-empty"),
   linkList: document.getElementById("link-list"),
   loadStatus: document.getElementById("load-status")
 };
@@ -27,19 +31,37 @@ async function init() {
   setStatus("Loading content...");
 
   try {
-    const response = await fetch(dataUrl, { cache: "no-store" });
+    const [response, newsData] = await Promise.all([
+      fetch(dataUrl, { cache: "no-store" }),
+      fetchNewsData()
+    ]);
 
     if (!response.ok) {
       throw new Error(`Failed to load content (${response.status})`);
     }
 
     const data = await response.json();
-    renderSite(data);
+    renderSite(data, newsData);
     setStatus("Portfolio loaded.", true);
   } catch (error) {
     console.error(error);
     elements.heroSummary.textContent = "Portfolio content could not be loaded. Confirm that the site is being served over HTTP and that content/site-data.json is available.";
     setStatus("Content failed to load.", true);
+  }
+}
+
+async function fetchNewsData() {
+  try {
+    const response = await fetch(newsUrl, { cache: "no-store" });
+
+    if (!response.ok) {
+      return null;
+    }
+
+    return response.json();
+  } catch (error) {
+    console.warn("News feed unavailable", error);
+    return null;
   }
 }
 
@@ -93,7 +115,7 @@ function scrollToTarget(target) {
   });
 }
 
-function renderSite(data) {
+function renderSite(data, newsData) {
   if (data.site?.seoTitle) {
     elements.title.textContent = data.site.seoTitle;
   }
@@ -116,6 +138,7 @@ function renderSite(data) {
   renderProjects(elements.featuredProjectList, featuredProjects, "featured");
   renderProjects(elements.additionalProjectList, additionalProjects, "compact");
   renderResearchEntries(elements.researchEntryList, data.research.entries, data.research.emptyState);
+  renderNews(newsData);
   renderLinks(elements.linkList, data.links);
 }
 
@@ -315,6 +338,61 @@ function renderLinks(container, links) {
   });
 }
 
+function renderNews(newsData) {
+  elements.newsTickerTrack.replaceChildren();
+
+  if (!newsData?.items?.length) {
+    elements.newsMeta.textContent = "Recent devlog posts will appear here automatically.";
+    elements.newsEmpty.hidden = false;
+    elements.newsTickerTrack.classList.remove("is-animated");
+    return;
+  }
+
+  elements.newsEmpty.hidden = true;
+  elements.newsMeta.textContent = `${newsData.discovered_projects.length} projects discovered • ${newsData.items.length} recent posts • Updated ${formatDateTime(newsData.generated_at)}`;
+
+  const items = newsData.items.slice(0, 10);
+  const animated = items.length > 1;
+  const renderItems = animated ? [...items, ...items] : items;
+
+  renderItems.forEach((item, index) => {
+    elements.newsTickerTrack.append(createNewsItem(item, animated && index >= items.length));
+  });
+
+  elements.newsTickerTrack.classList.toggle("is-animated", animated);
+}
+
+function createNewsItem(item, clone = false) {
+  const article = document.createElement("article");
+  article.className = "news-item";
+
+  if (clone) {
+    article.setAttribute("aria-hidden", "true");
+  }
+
+  const link = document.createElement("a");
+  link.className = "news-item-link";
+  link.href = item.link;
+  link.target = "_blank";
+  link.rel = "noreferrer noopener";
+
+  const project = document.createElement("p");
+  project.className = "news-item-project";
+  project.textContent = item.project_title;
+
+  const title = document.createElement("h3");
+  title.className = "news-item-title";
+  title.textContent = item.title;
+
+  const meta = document.createElement("p");
+  meta.className = "news-item-meta";
+  meta.textContent = `${formatDate(item.published_at)} • ${item.summary}`;
+
+  link.append(project, title, meta);
+  article.append(link);
+  return article;
+}
+
 function getInitials(title) {
   return title
     .split(/\s+/)
@@ -332,5 +410,26 @@ function setStatus(message, hideLater = false) {
     window.setTimeout(() => {
       elements.loadStatus.classList.remove("is-visible");
     }, 1800);
+  }
+}
+
+function formatDateTime(value) {
+  try {
+    return new Intl.DateTimeFormat(undefined, {
+      dateStyle: "medium",
+      timeStyle: "short"
+    }).format(new Date(value));
+  } catch {
+    return value;
+  }
+}
+
+function formatDate(value) {
+  try {
+    return new Intl.DateTimeFormat(undefined, {
+      dateStyle: "medium"
+    }).format(new Date(value));
+  } catch {
+    return value;
   }
 }
