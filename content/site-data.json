@@ -1,0 +1,285 @@
+{
+  "site": {
+    "seoTitle": "Jazhikho | Game Developer and Technical Designer",
+    "brandName": "Jazhikho",
+    "heroEyebrow": "Public-facing portfolio",
+    "heroSummary": "Game developer, technical designer, tools and systems builder, and research-oriented creator working across procedural generation, reflective play, and public-facing experimentation.",
+    "heroPanelText": "Public work centers on systems-driven design, procedural worldbuilding, and thoughtful framing around how games are made and why they matter.",
+    "shortBio": "Jazhikho is a game developer and research-oriented creator focused on game systems, procedural generation, technical design, and reflective play.",
+    "aboutParagraphs": [
+      "Their public work spans playable games, atmospheric prototypes, and developer-facing tools. Across those formats, the throughline is a hybrid practice: technical systems built in service of tone, pacing, readability, and meaning rather than complexity for its own sake.",
+      "The portfolio leans into procedural worldbuilding, tools development, and systems thinking, with public strengths in C#, Godot, Unity, Python, UI and UX awareness, and interdisciplinary design. It also reflects an ongoing interest in research and analytical writing as part of development rather than something separate from it.",
+      "Where AI-assisted workflows are part of the process, the emphasis stays on intentional use, clear provenance, and human accountability. Public materials foreground the work itself, the tools behind it, and the design questions it is trying to answer."
+    ],
+    "heroTags": [
+      "C#",
+      "Godot",
+      "Unity",
+      "Python",
+      "Procedural generation",
+      "Technical design"
+    ],
+    "strengths": [
+      "C#",
+      "Godot",
+      "Unity",
+      "Python",
+      "Procedural generation",
+      "Game systems design",
+      "Tools development",
+      "Technical design",
+      "UI/UX awareness",
+      "Research and analytical writing",
+      "Ethical AI workflow awareness"
+    ],
+    "footerNote": "Built as a lightweight static site for GitHub Pages. Public-safe by design: brand identity only, with no private resume details or personal contact information surfaced."
+  },
+  "projects": [
+    {
+      "slug": "stargen",
+      "title": "StarGen",
+      "shortPitch": "Procedurally generated galaxy and star-system tooling for automated worldbuilding.",
+      "description": "A Godot-based tool for generating galaxies, star systems, and celestial objects with seed-based determinism, 3D viewers, save and load support, and a strong emphasis on repeatable generation.",
+      "longDescription": "StarGen explores procedural worldbuilding as a serious tool-making practice rather than a novelty feature. The public build highlights galaxy-scale generation, system inspection, jump-route prototyping, and reliability-oriented iteration.",
+      "role": "Solo developer and systems/tool designer",
+      "techTools": [
+        "Godot",
+        "C#",
+        "3D viewers",
+        "Procedural generation",
+        "Automated test coverage"
+      ],
+      "status": "In development",
+      "year": "2026",
+      "tags": [
+        "Tool",
+        "Sci-fi",
+        "Worldbuilding",
+        "Seeded generation"
+      ],
+      "image": "./assets/projects/stargen.png",
+      "featured": true,
+      "links": [
+        {
+          "label": "Itch.io project page",
+          "url": "https://jazhikho.itch.io/stargen"
+        }
+      ]
+    },
+    {
+      "slug": "project-harvest",
+      "title": "Project Harvest",
+      "shortPitch": "A first-person psychological horror roguelite about identity, complicity, and how players treat the bodies they control.",
+      "description": "Built in Godot, Project Harvest uses a shifting corn maze, repeated runs, and layered notes to turn the player-avatar relationship into the core design question rather than background theme.",
+      "longDescription": "This project ties atmospheric horror to reflective design intent. It frames replay and failure as part of the argument, using structure and tone to ask what responsibility players and developers carry inside a game system.",
+      "role": "Solo developer",
+      "techTools": [
+        "Godot",
+        "Blender",
+        "3ds Max",
+        "Narrative systems",
+        "3D environment work"
+      ],
+      "status": "Released",
+      "year": "2026",
+      "tags": [
+        "Psychological horror",
+        "Reflective play",
+        "Roguelite",
+        "Narrative design"
+      ],
+      "image": "./assets/projects/project-harvest.png",
+      "featured": true,
+      "links": [
+        {
+          "label": "Itch.io project page",
+          "url": "https://jazhikho.itch.io/project-harvest"
+        }
+      ]
+    },
+    {
+      "slug": "relationship-overhead-tool",
+      "title": "Relationship Overhead Tool",
+      "shortPitch": "A relationship simulation sandbox for testing whether nuanced social systems can remain computationally lightweight.",
+      "description": "A prototype design and benchmarking tool that models social bonds across multiple dimensions while tracking performance, inspection views, and social ripple effects through a wider network.",
+      "longDescription": "The tool serves both as a systems sandbox and as a technical proof of concept. It focuses on layered relationship states, simulation readability, and measurable overhead instead of a single abstract relationship meter.",
+      "role": "Solo developer and systems researcher",
+      "techTools": [
+        "HTML5",
+        "Simulation design",
+        "Benchmarking",
+        "Matrix views",
+        "Performance logging"
+      ],
+      "status": "Released",
+      "year": "2026",
+      "tags": [
+        "Tool",
+        "Relationship systems",
+        "Simulation",
+        "Narrative support"
+      ],
+      "image": "./assets/projects/relationship-overhead-tool.png",
+      "featured": true,
+      "links": [
+        {
+          "label": "Itch.io project page",
+          "url": "https://jazhikho.itch.io/relationship-overhead-tool"
+        }
+      ]
+    },
+    {
+      "slug": "loot-luck-liability",
+      "title": "Loot, Luck & Liability",
+      "shortPitch": "A browser roguelite about risky runs, cursed treasure, and luck as both mechanic and punchline.",
+      "description": "A jam-built browser roguelite with dungeon runs, progression between attempts, and localization-aware writing that adapts its tone across multiple languages.",
+      "longDescription": "The public release foregrounds readable systems, fast iteration, and language support in a jam-scale format. It pairs humor with persistence mechanics, light economy design, and browser-friendly delivery.",
+      "role": "Solo developer",
+      "techTools": [
+        "React",
+        "Vite",
+        "Browser delivery",
+        "Localization",
+        "Mobile support"
+      ],
+      "status": "Released",
+      "year": "2026",
+      "tags": [
+        "Roguelite",
+        "Browser game",
+        "Localization",
+        "Jam project"
+      ],
+      "image": "./assets/projects/loot-luck-liability.png",
+      "featured": false,
+      "links": [
+        {
+          "label": "Itch.io project page",
+          "url": "https://jazhikho.itch.io/loot-luck-liability"
+        }
+      ]
+    },
+    {
+      "slug": "private-eye-pierce",
+      "title": "Private Eye Pierce & The Ink Spill",
+      "shortPitch": "A comic-noir point-and-click adventure where grayscale routine gives way to surreal color and mystery.",
+      "description": "A collaborative Unity prototype focused on atmosphere, character, and narrative puzzles, designed as a vertical slice rather than a difficulty-forward adventure.",
+      "longDescription": "The project emphasizes tone, environmental storytelling, and believable puzzle framing. Its visual identity leans on monochrome contrast and carefully placed bursts of color.",
+      "role": "Co-developer and collaborator",
+      "techTools": [
+        "Unity",
+        "Aseprite",
+        "2D narrative adventure design",
+        "Mouse-first interaction"
+      ],
+      "status": "Prototype",
+      "year": "2026",
+      "tags": [
+        "Narrative adventure",
+        "Noir",
+        "Collaboration",
+        "Vertical slice"
+      ],
+      "image": "./assets/projects/private-eye-pierce.png",
+      "featured": false,
+      "links": [
+        {
+          "label": "Itch.io project page",
+          "url": "https://jazhikho.itch.io/private-eye-pierce-the-ink-spill"
+        }
+      ]
+    },
+    {
+      "slug": "warp-engineer",
+      "title": "Warp Engineer",
+      "shortPitch": "A browser puzzle about stabilizing a warp bubble by tuning harmonics under pressure.",
+      "description": "A systems-tuning prototype about field coherence, hull stress, and managing multiple generators during interstellar travel.",
+      "longDescription": "Its public page makes AI provenance explicit, which is relevant to the broader portfolio stance on accountable workflow disclosure. The game itself centers on readable feedback and calibration under changing conditions.",
+      "role": "Concept direction and public release ownership",
+      "techTools": [
+        "HTML5",
+        "Puzzle systems",
+        "Browser prototype",
+        "Public AI disclosure"
+      ],
+      "status": "In development",
+      "year": "2025",
+      "tags": [
+        "Sci-fi",
+        "Prototype",
+        "Systems tuning",
+        "Puzzle"
+      ],
+      "image": "./assets/projects/warp-engineer.png",
+      "featured": false,
+      "links": [
+        {
+          "label": "Itch.io project page",
+          "url": "https://jazhikho.itch.io/warp-engineer"
+        }
+      ]
+    },
+    {
+      "slug": "manual-override",
+      "title": "Manual Override",
+      "shortPitch": "An unfinished experimental prototype about what happens when trust in AI systems goes too far.",
+      "description": "A GDevelop jam prototype framed around AI risk, misalignment, and the narrative consequences of over-trusting automated systems.",
+      "longDescription": "Manual Override reads as an experimental concept piece: rough, direct, and explicitly linked to current AI-safety discourse rather than presented as a polished commercial release.",
+      "role": "Solo developer",
+      "techTools": [
+        "GDevelop",
+        "HTML5",
+        "Experimental prototyping",
+        "Mouse-only interaction"
+      ],
+      "status": "Prototype",
+      "year": "2025",
+      "tags": [
+        "Experimental",
+        "AI themes",
+        "Jam project",
+        "Sci-fi"
+      ],
+      "image": "./assets/projects/manual-override.png",
+      "featured": false,
+      "links": [
+        {
+          "label": "Itch.io project page",
+          "url": "https://jazhikho.itch.io/manual-override"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "intro": "Current public-facing research is expressed more through project framing and systems experiments than through a formal publication list. The strongest throughlines are procedural worldbuilding, reflective design, simulation readability, and accountable development practice.",
+    "themes": [
+      "Procedural worldbuilding as a repeatable design and production tool.",
+      "Systems-driven structures that remain readable to players and collaborators.",
+      "Reflective and eudaimonic design questions in interactive form.",
+      "Research-informed development that treats implementation and analysis as part of the same practice.",
+      "AI-assisted workflow awareness with explicit interest in provenance, bounded use, and human accountability."
+    ],
+    "entries": [],
+    "emptyState": {
+      "title": "No public talks or publications are listed yet.",
+      "body": "This section is intentionally conservative. Add conference talks, papers, showcases, or academic outputs only when there is a clearly public-safe title and link."
+    }
+  },
+  "links": [
+    {
+      "label": "itch.io",
+      "url": "https://jazhikho.itch.io/",
+      "description": "Primary public hub for playable releases, tools, prototypes, and dev-facing experiments."
+    },
+    {
+      "label": "ArtStation",
+      "url": "https://jazhikho.artstation.com/",
+      "description": "Public art and visual portfolio presence under the Jazhikho identity."
+    },
+    {
+      "label": "Patreon / ForgeWalker Studios",
+      "url": "https://www.patreon.com/forgewalkerstudios",
+      "description": "Public support page connected to ongoing creative development."
+    }
+  ]
+}

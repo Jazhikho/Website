@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Jazhikho Portfolio Content",
+  "type": "object",
+  "required": [
+    "site",
+    "projects",
+    "research",
+    "links"
+  ],
+  "properties": {
+    "site": {
+      "type": "object",
+      "required": [
+        "seoTitle",
+        "brandName",
+        "heroEyebrow",
+        "heroSummary",
+        "heroPanelText",
+        "shortBio",
+        "aboutParagraphs",
+        "heroTags",
+        "strengths",
+        "footerNote"
+      ],
+      "properties": {
+        "seoTitle": { "type": "string" },
+        "brandName": { "type": "string" },
+        "heroEyebrow": { "type": "string" },
+        "heroSummary": { "type": "string" },
+        "heroPanelText": { "type": "string" },
+        "shortBio": { "type": "string" },
+        "aboutParagraphs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "heroTags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "strengths": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "footerNote": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slug",
+          "title",
+          "shortPitch",
+          "description",
+          "longDescription",
+          "role",
+          "techTools",
+          "status",
+          "year",
+          "tags",
+          "image",
+          "featured",
+          "links"
+        ],
+        "properties": {
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "shortPitch": { "type": "string" },
+          "description": { "type": "string" },
+          "longDescription": { "type": "string" },
+          "role": { "type": "string" },
+          "techTools": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "status": { "type": "string" },
+          "year": { "type": "string" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "image": { "type": "string" },
+          "featured": { "type": "boolean" },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "label",
+                "url"
+              ],
+              "properties": {
+                "label": { "type": "string" },
+                "url": { "type": "string", "format": "uri" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "research": {
+      "type": "object",
+      "required": [
+        "intro",
+        "themes",
+        "entries",
+        "emptyState"
+      ],
+      "properties": {
+        "intro": { "type": "string" },
+        "themes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "description"
+            ],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "link": {
+                "type": "object",
+                "required": [
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "label": { "type": "string" },
+                  "url": { "type": "string", "format": "uri" }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "emptyState": {
+          "type": "object",
+          "required": [
+            "title",
+            "body"
+          ],
+          "properties": {
+            "title": { "type": "string" },
+            "body": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "description"
+        ],
+        "properties": {
+          "label": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "description": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
