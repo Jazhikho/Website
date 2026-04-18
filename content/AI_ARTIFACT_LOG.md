@@ -41,5 +41,5 @@ Use this document to record future revisions to significant AI-assisted artifact
 | What AI produced | `scripts/sync_patreon_posts.py`, workflow updates, `content/patreon-posts.json`, and site changes to merge itch and Patreon items into one fixed-height latest-news list |
 | What the user accepted | Pending user review |
 | What the user rejected | The initial card-like news presentation that still read as multi-line blocks |
-| What the user changed | User requested that the news display as a true one-line list, five visible rows high, with newest items first |
+| What the user changed | User requested that the news display as a true one-line list, five visible rows high, with newest items first; a follow-up fix added versioned asset URLs to break GitHub Pages cache staleness |
 | Final approval | Pending |
