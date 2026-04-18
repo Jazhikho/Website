@@ -43,3 +43,17 @@ Use this document to record future revisions to significant AI-assisted artifact
 | What the user rejected | The initial card-like news presentation that still read as multi-line blocks |
 | What the user changed | User requested that the news display as a true one-line list, five visible rows high, with newest items first; a follow-up fix added versioned asset URLs to break GitHub Pages cache staleness |
 | Final approval | Pending |
+
+## Public Contact Link Update
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-04-18 |
+| Model / tool used | Codex (GPT-5-based coding agent) |
+| Task purpose | Add a public Fiverr profile link for freelance work requests |
+| Input materials used | Existing site content JSON and the user-provided Fiverr URL |
+| What AI produced | Updated `content/site-data.json` to include a Fiverr link card in the public links section |
+| What the user accepted | Pending user review |
+| What the user rejected | None recorded yet |
+| What the user changed | User supplied the Fiverr profile URL and requested that it be used for work requests |
+| Final approval | Pending |

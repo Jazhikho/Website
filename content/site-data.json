@@ -267,6 +267,11 @@
   },
   "links": [
     {
+      "label": "Fiverr",
+      "url": "https://www.fiverr.com/s/DBYeDqo",
+      "description": "For direct freelance inquiries and scoped work requests."
+    },
+    {
       "label": "itch.io",
       "url": "https://jazhikho.itch.io/",
       "description": "My main public hub for games, tools, prototypes, and other playable work."
