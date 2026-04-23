@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T03:47:02.296045+00:00",
+  "generated_at": "2026-04-23T08:10:37.055384+00:00",
   "source_profile_url": "https://jazhikho.itch.io/",
   "discovered_projects": [
     {
@@ -111,6 +111,15 @@
       "link": "https://jazhikho.itch.io/stargen/devlog/1456772/v05-release",
       "published_at": "2026-03-13T15:36:28+00:00",
       "summary": "I\u2019m not sure what happened to the v0.4 version, but it was never released anywhere. I decided not to make a big deal about it and just go ahead and release 0.5 instead. This\u2026"
+    },
+    {
+      "project_title": "Loot, Luck & Liability",
+      "project_slug": "loot-luck-liability",
+      "project_url": "https://jazhikho.itch.io/loot-luck-liability",
+      "title": "New Game! Announcing Loot, Luck, and Liability!",
+      "link": "https://jazhikho.itch.io/loot-luck-liability/devlog/1453882/new-game-announcing-loot-luck-and-liability",
+      "published_at": "2026-03-10T03:39:44+00:00",
+      "summary": "Announcing the release of Loot, Luck & Liability. This is a silly game that I made ~48 hours for St. Paddy\u2019s Roguelite Game Jam. Based on feedback, I will be updating this game\u2026"
     },
     {
       "project_title": "Project Harvest",
