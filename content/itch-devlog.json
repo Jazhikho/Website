@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T07:45:05.002451+00:00",
+  "generated_at": "2026-04-25T13:40:42.994538+00:00",
   "source_profile_url": "https://jazhikho.itch.io/",
   "discovered_projects": [
     {
@@ -122,15 +122,6 @@
       "summary": "Announcing the release of Loot, Luck & Liability. This is a silly game that I made ~48 hours for St. Paddy\u2019s Roguelite Game Jam. Based on feedback, I will be updating this game\u2026"
     },
     {
-      "project_title": "Project Harvest",
-      "project_slug": "project-harvest",
-      "project_url": "https://jazhikho.itch.io/project-harvest",
-      "title": "1.6 Release! (And why it's not 2.0)",
-      "link": "https://jazhikho.itch.io/project-harvest/devlog/1452274/16-release-and-why-its-not-20",
-      "published_at": "2026-03-08T15:00:54+00:00",
-      "summary": "So, I pushed what I think will be the Final release (for now) of this game. And it\u2019s a 1.6 release, not a 2.0 release. I didn\u2019t end up changing the game play despite wanting to\u2026"
-    },
-    {
       "project_title": "StarGen",
       "project_slug": "stargen",
       "project_url": "https://jazhikho.itch.io/stargen",
@@ -147,15 +138,6 @@
       "link": "https://jazhikho.itch.io/stargen/devlog/1430153/v02",
       "published_at": "2026-02-28T14:50:33+00:00",
       "summary": "I\u2019ve been working on improving StarGen; one of the immediate things I wanted to tackle was the asteroid belts, since they weren\u2019t displaying properly. There are still issues\u2026"
-    },
-    {
-      "project_title": "Project Harvest",
-      "project_slug": "project-harvest",
-      "project_url": "https://jazhikho.itch.io/project-harvest",
-      "title": "Version 2.0 coming",
-      "link": "https://jazhikho.itch.io/project-harvest/devlog/1407563/version-20-coming",
-      "published_at": "2026-02-22T22:51:24+00:00",
-      "summary": "Its been a few weeks since I\u2019ve last posted - it has been a busy semester. I\u2019ve been working on Private Eye Pierce with my team. But with some upcoming festivals coming up, I\u2026"
     }
   ]
 }
