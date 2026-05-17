@@ -1,7 +1,15 @@
 {
-  "generated_at": "2026-05-17T13:56:39.686436+00:00",
+  "generated_at": "2026-05-17T19:35:54.291252+00:00",
   "source_profile_url": "https://jazhikho.itch.io/",
   "discovered_projects": [
+    {
+      "title": "Around the Bend",
+      "slug": "around-the-bend",
+      "url": "https://jazhikho.itch.io/around-the-bend",
+      "description": "Paddle down the River Feral. Who do you trust? Are you ready to make it on your own?",
+      "cover_image": "https://img.itch.zone/aW1nLzI3MzIwNjYzLnBuZw==/315x250%23c/OSX%2F%2BU.png",
+      "feed_url": "https://jazhikho.itch.io/around-the-bend/devlog.rss"
+    },
     {
       "title": "StarGen",
       "slug": "stargen",

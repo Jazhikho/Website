@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-05-17T13:56:39.686873+00:00",
+  "generated_at": "2026-05-17T19:35:54.291755+00:00",
   "source_profile_url": "https://jazhikho.itch.io/",
   "projects": [
+    {
+      "title": "Around the Bend",
+      "slug": "around-the-bend",
+      "url": "https://jazhikho.itch.io/around-the-bend",
+      "description": "Paddle down the River Feral. Who do you trust? Are you ready to make it on your own?",
+      "cover_image": "https://img.itch.zone/aW1nLzI3MzIwNjYzLnBuZw==/315x250%23c/OSX%2F%2BU.png",
+      "status": "Released",
+      "category": "",
+      "genre": "Adventure",
+      "made_with": [],
+      "tags": [
+        "Bitsy",
+        "Comedy",
+        "Multiple Endings",
+        "Narrative",
+        "No AI",
+        "Pixel Art",
+        "Singleplayer"
+      ],
+      "ai_disclosure": [],
+      "updated_at": "",
+      "updated_text": ""
+    },
     {
       "title": "StarGen",
       "slug": "stargen",
@@ -30,7 +53,7 @@
         "Code"
       ],
       "updated_at": "2026-05-13T18:59:00+00:00",
-      "updated_text": "13 May 2026 @ 18:59 UTC 3 days ago"
+      "updated_text": "13 May 2026 @ 18:59 UTC 4 days ago"
     },
     {
       "title": "Project Harvest",
@@ -63,7 +86,7 @@
         "Text"
       ],
       "updated_at": "2026-05-07T16:00:00+00:00",
-      "updated_text": "07 May 2026 @ 16:00 UTC 9 days ago"
+      "updated_text": "07 May 2026 @ 16:00 UTC 10 days ago"
     },
     {
       "title": "Loot, Luck & Liability",
