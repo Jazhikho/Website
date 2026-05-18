@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T19:35:54.291252+00:00",
+  "generated_at": "2026-05-18T04:41:25.022816+00:00",
   "source_profile_url": "https://jazhikho.itch.io/",
   "discovered_projects": [
     {
@@ -92,6 +92,15 @@
     }
   ],
   "items": [
+    {
+      "project_title": "Around the Bend",
+      "project_slug": "around-the-bend",
+      "project_url": "https://jazhikho.itch.io/around-the-bend",
+      "title": "Around the Bend - Lessons learned",
+      "link": "https://jazhikho.itch.io/around-the-bend/devlog/1526386/around-the-bend-lessons-learned",
+      "published_at": "2026-05-17T19:57:12+00:00",
+      "summary": "I made Around the Bend for my own jam, the One Game a Week Jam, and this week\u2019s experiment was using Bitsy. It was an interesting challenge, and I will never use Bitsy again...."
+    },
     {
       "project_title": "Spud-Gotchi",
       "project_slug": "spud-gotchi",
@@ -190,15 +199,6 @@
       "link": "https://jazhikho.itch.io/loot-luck-liability/devlog/1453882/new-game-announcing-loot-luck-and-liability",
       "published_at": "2026-03-10T03:39:44+00:00",
       "summary": "Announcing the release of Loot, Luck & Liability. This is a silly game that I made ~48 hours for St. Paddy\u2019s Roguelite Game Jam. Based on feedback, I will be updating this game..."
-    },
-    {
-      "project_title": "Project Harvest",
-      "project_slug": "project-harvest",
-      "project_url": "https://jazhikho.itch.io/project-harvest",
-      "title": "1.6 Release! (And why it's not 2.0)",
-      "link": "https://jazhikho.itch.io/project-harvest/devlog/1452274/16-release-and-why-its-not-20",
-      "published_at": "2026-03-08T15:00:54+00:00",
-      "summary": "So, I pushed what I think will be the Final release (for now) of this game. And it\u2019s a 1.6 release, not a 2.0 release. I didn\u2019t end up changing the game play despite wanting to..."
     }
   ]
 }

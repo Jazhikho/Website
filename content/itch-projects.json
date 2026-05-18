@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T19:35:54.291755+00:00",
+  "generated_at": "2026-05-18T04:41:25.023300+00:00",
   "source_profile_url": "https://jazhikho.itch.io/",
   "projects": [
     {
@@ -11,7 +11,9 @@
       "status": "Released",
       "category": "",
       "genre": "Adventure",
-      "made_with": [],
+      "made_with": [
+        "bitsy"
+      ],
       "tags": [
         "Bitsy",
         "Comedy",
@@ -144,7 +146,7 @@
         "Text"
       ],
       "updated_at": "2026-05-06T22:58:00+00:00",
-      "updated_text": "06 May 2026 @ 22:58 UTC 10 days ago"
+      "updated_text": "06 May 2026 @ 22:58 UTC 11 days ago"
     },
     {
       "title": "Relationship Overhead Tool",
